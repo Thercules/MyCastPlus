@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="login-register.css">
+	<link rel="icon" href="images/MCICON.ico" type="">
+	<title>
+		MyCourses+
+	</title>
+</head>
+
+<body>
+	<div id="container" class="container">
+		<!-- FORM SECTION -->
+		<div class="row">
+			<!-- SIGN UP -->
+			<div class="col align-items-center flex-col sign-up">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-up">
+						<h2>REGISTRAR</h2>
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" id="full_name" placeholder="Nome Completo">
+						</div>
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" id="email" placeholder="E-mail">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" id="password" placeholder="Senha">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="text" id="plushashcode" placeholder="Código Fornecido">
+						</div>
+					
+						<button onclick="register()">Registrar</button>
+						
+						<p>
+							<span>
+								Já possui uma conta?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Faça Login aqui
+							</b>
+						</p>
+						<button onclick="window.location.href='https://api.whatsapp.com/send?phone=5581987209676&text=Ol%C3%A1,%20falo%20com%20o%20suporte%20da%20MC?';">Pagou? solicite seu código</button> <BR>
+					</div>
+				</div>
+			</div>
+			<!-- END SIGN UP -->
+			<!-- SIGN IN -->
+			
+			<div class="col align-items-center flex-col sign-in">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-in">
+						<h2>LOGIN</h2>
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" id="full_name" placeholder="Nome Completo">
+						</div>
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" id="email" placeholder="E-mail">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" id="password" placeholder="Senha">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="text" id="plushashcode" placeholder="Código Fornecido">
+						</div>
+						<button onclick="login()">Entrar</button>
+						<p>
+							<b>
+								Forgot password?
+							</b>
+						</p>
+						<p>
+							<span>
+								Não possui uma conta?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Cadastre-se clicando aqui
+							</b>
+						</p>
+						<button onclick="window.location.href='https://my-courses-lite.vercel.app/';">Versão LITE</button> <BR>
+					</div>
+				</div>
+			</div>
+			<!-- END SIGN IN -->
+		</div>
+		<!-- END FORM SECTION -->
+		<!-- CONTENT SECTION -->
+		<div class="row content-row">
+			<!-- SIGN IN CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="text sign-in">
+					<h2>
+						Seja bem-vindo
+					</h2>
+					<p>
+						Somos a plataforma gratuita que mais oferece suporte ao estudante! <br>
+						O Nosso time de profissionais ficará feliz em atende-lo.
+					</p>
+				</div>
+				<div class="img sign-in">
+					<img src="images/undraw_wait_in_line_o2aq.svg" alt="welcome">
+				</div>
+			</div>
+			<!-- END SIGN IN CONTENT -->
+			<!-- SIGN UP CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="img sign-up">
+					<img src="images/undraw_mobile_application_re_13u3.svg" alt="welcome">
+				</div>
+				<div class="text sign-up">
+					<h2>
+						Trabalhe conosco
+					</h2>
+					<p>
+						Conheça nossa principal parceria, a Help All, empresa 100% focada no suporte e acessibilidade para estudantes deficientes.
+					</p>
+				</div>
+			</div>
+			<!-- END SIGN UP CONTENT -->
+		</div>
+		<!-- END CONTENT SECTION -->
+
+		
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
